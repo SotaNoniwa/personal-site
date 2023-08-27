@@ -93,6 +93,10 @@ p {
   border-radius: 50%;
 }
 
+#project {
+  background-color: #E5E4E2;
+}
+
 .card-wrapper {
   display: flex;
   justify-content: center;

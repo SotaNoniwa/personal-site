@@ -26,10 +26,10 @@
     </div>
   </section>
 
-  <section id="about-me" class="my-5">
-    <div class="p-5 text-start bg-body-tertiary">
+  <section id="about-me">
+    <div class="p-5 bg-body-tertiary">
       <div class="grid-container">
-        <div class="container">
+        <div>
           <h1 class="text-body-emphasis">About me</h1>
           <p class="lead">
             I am a Computer Science BSc student with primary interest in web &
@@ -40,136 +40,133 @@
             explore the website with a cup of tea &#9749;
           </p>
         </div>
-        <div class="container">
+        <div>
           <img id="my-face" src="./images/myFace.JPG" alt="my picture" />
         </div>
       </div>
     </div>
   </section>
 
-  <section id="project">
-    <div class="container">
-      <div class="card-wrapper">
-
-        <!-- A flip card -->
-        <div class="card-container">
-          <div class="flip-card">
-            <div class="front" id="portfolio"></div>
-            <div class="back">
-              <h3>Portfolio Website</h3>
-              <p>A straightforward personal website about me. Although there are only a few products currently, I'm in
-                the process of enhancing my creativity through experimentation and learning.</p>
-              <p>Technologies: HTML/CSS, Git Bash, GitHub</p>
-              <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-                <li class="ms-3">
-                  <a class="text-body-secondary" href="https://github.com/SotaNoniwa/sotanoniwa.github.io"
-                     target="_blank">
-                    <img src="./images/github.svg" alt="github" height="30">
-                    <use xlink:href="#github"></use>
-                    </img>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <section id="project" class="p-5">
+    <h1 class="text-body-emphasis">Projects</h1>
+    <div class="card-wrapper">
+      <!-- A flip card -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="front" id="portfolio"></div>
+          <div class="back">
+            <h3>Portfolio Website</h3>
+            <p>A straightforward personal website about me. Although there are only a few products currently, I'm in
+              the process of enhancing my creativity through experimentation and learning.</p>
+            <p>Technologies: HTML/CSS, Git Bash, GitHub</p>
+            <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SotaNoniwa/sotanoniwa.github.io"
+                   target="_blank" rel="noopener">
+                  <img src="./images/github.svg" alt="github" height="30">
+                  <use xlink:href="#github"></use>
+                  </img>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- A flip card -->
-        <div class="card-container">
-          <div class="flip-card">
-            <div class="front" id="to-do-list-app"></div>
-            <div class="back">
-              <h3>To Do List App</h3>
-              <p>This app was developed by following a JavaScript tutorial. It allows you to create a to-do list
-                categorized by title.
-                While I've gained an understanding of how EJS works, I personally find React to be more comfortable for
-                me.</p>
-              <p>Technologies: MongoDB, Express, JS, EJS, HTML/CSS, Git Bash, GitHub, Cyclic</p>
-              <p>https://todolist-for-you.cyclic.app/</p>
-              <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-                <li class="ms-3">
-                  <a class="text-body-secondary" href="https://github.com/SotaNoniwa/todolist"
-                     target="_blank">
-                    <img src="./images/github.svg" alt="github" height="30">
-                    <use xlink:href="#github"></use>
-                    </img>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a class="text-body-secondary" href="https://todolist-for-you.cyclic.app" target="_blank">
-                    <img src="./images/window.svg" alt="window" height="30">
-                    <use xlink:href="#window"></use>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- A flip card -->
-        <div class="card-container">
-          <div class="flip-card">
-            <div class="front" id="keeper-app"></div>
-            <div class="back">
-              <h3>Notes Keeper App</h3>
-              <p>This is a MERN Stack application that enables you to create, delete, read, and edit notes. With this
-                app, you'll never forget what you need to do!</p>
-              <p>Technologies: MongoDB, Express, React, Node, JS, HTML/CSS, Git Bash, GitHub, Render</p>
-              <p>https://notes-keeper-app.onrender.com/</p>
-              <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-                <li class="ms-3">
-                  <a class="text-body-secondary" href="https://github.com/SotaNoniwa/notes-keeper-app"
-                     target="_blank">
-                    <img src="./images/github.svg" alt="github" height="30">
-                    <use xlink:href="#github"></use>
-                    </img>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a class="text-body-secondary" href="https://notes-keeper-app.onrender.com" target="_blank">
-                    <img src="./images/window.svg" alt="window" height="30">
-                    <use xlink:href="#window"></use>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- A flip card -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="front" id="to-do-list-app"></div>
+          <div class="back">
+            <h3>To Do List App</h3>
+            <p>This app was developed by following a JavaScript tutorial. It allows you to create a to-do list
+              categorized by title.
+              While I've gained an understanding of how EJS works, I personally find React to be more comfortable for
+              me.</p>
+            <p>Technologies: MongoDB, Express, JS, EJS, HTML/CSS, Git Bash, GitHub, Cyclic</p>
+            <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SotaNoniwa/todolist"
+                   target="_blank" rel="noopener">
+                  <img src="./images/github.svg" alt="github" height="30">
+                  <use xlink:href="#github"></use>
+                  </img>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://todolist-for-you.cyclic.app" target="_blank"
+                   rel="noopener">
+                  <img src="./images/window.svg" alt="window" height="30">
+                  <use xlink:href="#window"></use>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- A flip card -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="front" id="keeper-app"></div>
+          <div class="back">
+            <h3>Notes Keeper App</h3>
+            <p>This is a MERN Stack application that enables you to create, delete, read, and edit notes. With this
+              app, you'll never forget what you need to do!</p>
+            <p>Technologies: MongoDB, Express, React, Node, JS, HTML/CSS, Git Bash, GitHub, Render</p>
+            <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/SotaNoniwa/notes-keeper-app"
+                   target="_blank" rel="noopener">
+                  <img src="./images/github.svg" alt="github" height="30">
+                  <use xlink:href="#github"></use>
+                  </img>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://notes-keeper-app.onrender.com" target="_blank"
+                   rel="noopener">
+                  <img src="./images/window.svg" alt="window" height="30">
+                  <use xlink:href="#window"></use>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
     </div>
   </section>
 
   <section id="footer">
-    <div class="container">
-      <footer
-              class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a title="auther" href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sota Noniwa</span>
-        </div>
+    <footer
+            class="d-flex flex-wrap justify-content-between align-items-center p-4 bg-body-tertiary">
+      <div class="col-md-4 d-flex align-items-center">
+        <a title="auther" href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sota Noniwa</span>
+      </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-body-secondary" href="mailto:surfersou@gmail.com?subject=Request from the website">
-              <img src="./images/envelope-at.svg" alt="envelope" height="30">
-              <use xlink:href="#mail"></use>
-              </img>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-body-secondary" href="https://github.com/SotaNoniwa" target="_blank">
-              <img src="./images/github.svg" alt="github" height="30">
-              <use xlink:href="#github"></use>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="mailto:surfersou@gmail.com?subject=Request from the website">
+            <img src="./images/envelope-at.svg" alt="envelope" height="30">
+            <use xlink:href="#mail"></use>
+            </img>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://github.com/SotaNoniwa" target="_blank" rel="noopener">
+            <img src="./images/github.svg" alt="github" height="30">
+            <use xlink:href="#github"></use>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </section>
 
   <script

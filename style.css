@@ -67,24 +67,12 @@ p {
   align-items: center;
 }
 
-@media (max-width: 455px) {
-  #about-me>div {
-    height: 140vh;
-  }
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 10px;
   align-items: center;
-}
-
-@media (max-width: 700px) {
-  .grid-container {
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 1fr;
-  }
+  text-align: center;
 }
 
 #my-face {
@@ -162,4 +150,87 @@ p {
 
 #keeper-app {
   background-image: url(images/keeper-app.png);
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 80px;
+  width: 4px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #C5C6D0;
+}
+
+.timeline>li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+
+.timeline>li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 180px;
+  text-align: left;
+  min-height: 200px;
+}
+
+.timeline>li:after,
+.timeline>li:before {
+  display: table;
+  content: "";
+}
+
+.timeline>li:after {
+  clear: both;
+}
+
+.timeline-img {
+  position: absolute;
+  z-index: 100;
+  width: 160px;
+  height: 160px;
+  left: 0;
+  margin-left: 0;
+  border: 7px solid #C5C6D0;
+  border-radius: 100%;
+}
+
+.round-img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* iPhone X || 375 x 812 || Default */
+@media only screen and (max-width: 812px) {
+  .grid-container {
+    display: table;
+  }
+
+
+  .timeline:before {
+    left: 40px;
+    width: 2px;
+  }
+
+  .timeline>li .timeline-panel {
+    padding-left: 100px;
+    padding: 100px 20px 0 0;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity));
+  }
+
+  .timeline-img {
+    width: 80px;
+    height: 80px;
+  }
 }

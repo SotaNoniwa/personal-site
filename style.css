@@ -5,18 +5,25 @@ html {
 * {
   margin: 0;
   font-family: HelveticaNeue-Thin, Helvetica, Arial;
-  font-weight: bold;
 }
 
-h1 {
+body {
+  background-image: url(images/bright-squares-1920x1080.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h2 {
+  font-weight: 800;
   text-align: center;
+  margin: 3rem;
 }
 
 /* top-banner section */
 
 #top-banner {
   height: 100vh;
-  background-image: url(images/top3.jpg);
+  background-image: url(images/top.jpg);
   background-size: cover;
   overflow: hidden;
 }
@@ -33,6 +40,7 @@ h1 {
 .content>h1 {
   font-size: 80px;
   white-space: nowrap;
+  font-weight: 800;
 }
 
 /* about me section */
@@ -42,6 +50,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 2rem 15%;
 }
 
 #about-me>div {
@@ -69,10 +78,6 @@ h1 {
 }
 
 /* project section */
-
-#project {
-  background-color: #E5E4E2;
-}
 
 .card-wrapper {
   display: flex;
@@ -160,6 +165,10 @@ i {
 
 /* profile section */
 
+#profile {
+  padding: 15%;
+}
+
 .timeline {
   position: relative;
   padding: 0;
@@ -183,7 +192,7 @@ i {
   margin-bottom: 50px;
 }
 
-.timeline>li .timeline-panel {
+.timeline-panel {
   position: relative;
   float: right;
   width: 100%;
@@ -223,10 +232,14 @@ i {
   height: 100%;
 }
 
+/* contact section */
+
 #contact {
   width: 100%;
   height: 100vh;
-  background: #001660;
+  background-image: url(images/earth.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,23 +287,39 @@ i {
 
 /* iPhone X || 375 x 812 || Default */
 @media only screen and (max-width: 812px) {
+  .content>h1 {
+    font-size: 60px;
+    white-space: break-spaces;
+  }
+
+  #about-me {
+    height: 100%;
+  }
+
   .grid-container {
     flex-direction: column;
   }
 
   .timeline:before {
-    left: 40px;
-    width: 2px;
+    left: 50%;
   }
 
-  .timeline>li .timeline-panel {
-    padding-left: 100px;
-    padding: 100px 20px 0 0;
-    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity));
+  .timeline-panel {
+    padding: 180px 2rem 0 2rem;
+  }
+
+  .timeline-panel h4,
+  .timeline-panel p {
+    padding: 10px;
+  }
+
+  .timeline-heading,
+  .timeline-body {
+    background-color: #C5C6D0;
   }
 
   .timeline-img {
-    width: 80px;
-    height: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }

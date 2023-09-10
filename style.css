@@ -19,6 +19,12 @@ h2 {
   margin: 3rem;
 }
 
+/* navbar */
+
+nav {
+  background-color: #e3f2fd;
+}
+
 /* top-banner section */
 
 #top-banner {
@@ -131,6 +137,10 @@ h2 {
   text-align: center;
   color: white;
   font-weight: lighter;
+}
+
+.back li {
+  margin: 0 5px;
 }
 
 #portfolio {

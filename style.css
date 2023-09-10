@@ -4,13 +4,15 @@ html {
 
 * {
   margin: 0;
-}
-
-h1,
-p {
   font-family: HelveticaNeue-Thin, Helvetica, Arial;
   font-weight: bold;
 }
+
+h1 {
+  text-align: center;
+}
+
+/* top-banner section */
 
 #top-banner {
   height: 100vh;
@@ -33,8 +35,16 @@ p {
   white-space: nowrap;
 }
 
-#about-me>div {
+/* about me section */
+
+#about-me {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-me>div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,11 +58,17 @@ p {
   text-align: center;
 }
 
+.grid-container>div p {
+  text-align: left;
+}
+
 #my-face {
   width: 220px;
   height: 200px;
   border-radius: 50%;
 }
+
+/* project section */
 
 #project {
   background-color: #E5E4E2;
@@ -62,7 +78,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* additional */
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -125,6 +140,26 @@ p {
   background-image: url(images/keeper-app.png);
 }
 
+/* skill section */
+
+#skill>div.icon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 2rem;
+}
+
+#skill>p {
+  text-align: center;
+}
+
+i {
+  font-size: 150px;
+}
+
+/* profile section */
+
 .timeline {
   position: relative;
   padding: 0;
@@ -153,8 +188,12 @@ p {
   float: right;
   width: 100%;
   padding: 0 20px 0 180px;
-  text-align: left;
   min-height: 200px;
+}
+
+.timeline-panel h4,
+.timeline-panel p {
+  text-align: left;
 }
 
 .timeline>li:after,
@@ -207,6 +246,7 @@ p {
   color: #555;
   font-weight: 800;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #contact input,
@@ -235,7 +275,7 @@ p {
 /* iPhone X || 375 x 812 || Default */
 @media only screen and (max-width: 812px) {
   .grid-container {
-    display: table;
+    flex-direction: column;
   }
 
   .timeline:before {

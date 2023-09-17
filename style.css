@@ -169,7 +169,7 @@ nav {
   text-align: center;
 }
 
-i {
+#skill i {
   font-size: 150px;
 }
 
@@ -304,6 +304,14 @@ i {
 
   #about-me {
     height: 100%;
+  }
+
+  #skill>div.icon-container {
+    margin: 0;
+  }
+
+  #skill i {
+    font-size: 75px;
   }
 
   .grid-container {

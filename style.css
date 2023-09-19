@@ -144,7 +144,7 @@ nav {
 }
 
 #portfolio {
-  background-image: url(images/portfolio.jpg);
+  background-image: url(images/portfolio-adjusted.png);
 }
 
 #to-do-list-app {
@@ -297,6 +297,10 @@ nav {
 
 /* iPhone X || 375 x 812 || Default */
 @media only screen and (max-width: 812px) {
+  #top-banner {
+    background-image: url(images/top-small.jpg);
+  }
+
   .content>h1 {
     font-size: 60px;
     white-space: break-spaces;
@@ -339,5 +343,9 @@ nav {
   .timeline-img {
     left: 50%;
     transform: translate(-50%, 0);
+  }
+
+  #contact {
+    background-image: url(images/stars.jpg);
   }
 }
